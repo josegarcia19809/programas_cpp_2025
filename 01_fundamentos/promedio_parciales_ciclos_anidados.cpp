@@ -1,9 +1,14 @@
 //
 // Created by Jose Garcia on 04/04/25.
 //
+/*
+    Este programa declara el número de estudiantes y los parciales que presenta cada estudiante.
+    Pedirá las calificaciones y obtendrá el promedio de cada estudiante.
+*/
 
 
 #include <iostream>
+
 using namespace std;
 
 int main() {
@@ -20,8 +25,7 @@ int main() {
             total = total + calificacion;
         }
         double promedio = static_cast<double>(total) / PARCIALES;
-        cout << "El promedio del estudiante " << estudiante
-                << " es " << promedio << endl;
+        cout << "El promedio del estudiante " << estudiante << " es " << promedio << endl;
         cout << endl;
     }
 
