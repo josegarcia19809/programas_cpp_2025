@@ -49,13 +49,13 @@ int main() {
 
     cout << fixed << setprecision(1);
 
+    cout<<endl;
     // Mostrar materias reprobadas
-    cout << "Materias no aprobadas (calificación < 6.0)" << endl;
+    cout << "--------------------------Materias no aprobadas (calificación < 6.0)" << endl;
     bool hayReprobadas = false;
 
     for (int i = 0; i < numMaterias; ++i) {
         if (materias[i].calificacion < 6) {
-            cout << ".............................." << endl;
             cout << "Nombre: " << materias[i].nombre;
             cout << " - Calificación: " << materias[i].calificacion << endl;
             cout << endl;
@@ -65,14 +65,14 @@ int main() {
     if (!hayReprobadas) {
         cout << "No hubo materias reprobadas" << endl;
     }
+    cout << "...................................................." << endl;
 
     // Mostrar materias aprobadas
-    cout << "Materias aprobadas (calificación >= 6.0)" << endl;
+    cout<<endl;
+    cout << "--------------------------Materias aprobadas (calificación >= 6.0)" << endl;
     bool hayAprobadas = false;
-
     for (int i = 0; i < numMaterias; ++i) {
         if (materias[i].calificacion >= 6.0) {
-            cout << ".............................." << endl;
             cout << "Nombre: " << materias[i].nombre;
             cout << " - Calificación: " << materias[i].calificacion << endl;
             cout << endl;
@@ -82,6 +82,8 @@ int main() {
     if (!hayAprobadas) {
         cout << "No hubo materias aprobadas" << endl;
     }
+
+    cout << "...................................................." << endl;
 
     // Mostrar promedio general
     double promedio = sumaCalificaciones / numMaterias;
